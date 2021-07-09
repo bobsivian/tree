@@ -347,6 +347,7 @@ class Tree extends React.Component<TreeProps, TreeState> {
     const { expandedKeys, dragNodesKeys } = this.state;
     const { onDragEnter, isOutsider, allowOutsider } = this.props;
     const { pos, eventKey } = node.props;
+    console.log('ondragenter----allow outsider--',allowOutsider)
     if(isOutsider&&allowOutsider){
       console.log(isOutsider,'outsider--enter--------')
       this.dragNode = node
@@ -456,7 +457,7 @@ class Tree extends React.Component<TreeProps, TreeState> {
     const { dragNodesKeys = [], dropPosition } = this.state;
     const { onDrop, allowOutsider, isOutsider } = this.props;
     const { eventKey, pos } = node.props;
-
+    console.log('ondrag-drop --allowOutsider',allowOutsider)
     if(allowOutsider && isOutsider){
       this.dragNode = node
      }
