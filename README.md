@@ -53,6 +53,8 @@ see examples
 
 | name     | description    | type     | default      |
 |----------|----------------|----------|--------------|
+|allowOutsider| allow other tree to drop| boolean | false
+|isOutsider | drap node is from OutSider | boolean | false
 | autoExpandParent | whether auto expand parent treeNodes | bool | false |
 | checkable | whether support checked | bool/React Node | false |
 | checkedKeys | Controlled checked treeNodes(After setting, defaultCheckedKeys will not work). Note: parent and children nodes are associated, if the parent node's key exists, it all children node will be checked, and vice versa. When set checkable and checkStrictly, it should be an object, which contains checked array and halfChecked array. | String[]/{checked:Array<String>,halfChecked:Array<String>} | [] |
